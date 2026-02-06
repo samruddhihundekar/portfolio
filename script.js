@@ -31,6 +31,12 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
     alert("Form submitted successfully! 😊");
 
+    // log submitted data for debugging
+console.log("Name:", name);
+console.log("Email:", email);
+console.log("Message:", message);
+
+
     // clear form
     document.getElementById("contactForm").reset();
 });
