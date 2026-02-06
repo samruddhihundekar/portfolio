@@ -1,3 +1,7 @@
+// Contact form validation using JavaScript
+// Prevents empty input and checks email format
+
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault(); // stop page refresh
 
