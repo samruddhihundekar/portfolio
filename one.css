@@ -191,3 +191,8 @@ footer {
         width: 95%;
     }
 }
+
+nav ul li a:hover {
+    color: #ffe4ec;
+}
+
