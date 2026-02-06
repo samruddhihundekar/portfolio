@@ -1,0 +1,193 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #6c63ff;
+    --secondary: #ff6584;
+    --dark: #1f2933;
+    --light: #f9f9fb;
+    --card: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 20px 40px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 60px 10%;
+}
+
+/* HOME */
+
+#home {
+    text-align: center;
+    background: linear-gradient(135deg, #eef2ff, #ffe4ec);
+    padding: 80px 10%;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+#home p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* ABOUT */
+
+#about {
+    background: white;
+    border-radius: 12px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* SKILLS */
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#skills ul li {
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+/* PROJECTS */
+
+#projects p {
+    background: var(--card);
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid var(--secondary);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* CONTACT */
+
+#contact form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+#contact textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* BUTTON */
+
+button {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    #about {
+        width: 95%;
+    }
+}
