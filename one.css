@@ -195,4 +195,10 @@ footer {
 nav ul li a:hover {
     color: #ffe4ec;
 }
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
 
